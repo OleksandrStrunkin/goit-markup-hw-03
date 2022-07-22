@@ -1,0 +1,180 @@
+:root {
+  --logo-color: #2196f3;
+  --second-logo-color: #212121;
+  --accent-color: #2196f3;
+  --first-title-color: #ffffff;
+  --second-title-color: #212121;
+  --text-color: #757575;
+  --btn-text-color: #212121;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --color-btn-menu: #f5f4fa;
+  --color-hero-btn: #188ce8;
+}
+body {
+  font-family: roboto, sans-serif;
+  color: var(--second-title-color);
+}
+.list,
+.logo,
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+.header {
+}
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--second-logo-color);
+}
+.logo-decoration {
+  color: var(--logo-color);
+}
+.logo-footer {
+  color: var(--first-title-color);
+}
+.footer {
+  background-color: #2f303a;
+}
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+.contacts-link,
+.tel-link {
+  color: var(--text-color);
+}
+.link.current {
+  color: var(--accent-color);
+}
+.contacts-adress {
+  color: var(--first-title-color);
+}
+.contacts-footer {
+  color: var(--contacts-footer-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.nav {
+}
+.nav-list {
+}
+.contacts {
+}
+/* Секція герой */
+.hero {
+}
+.hero-title {
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--first-title-color);
+  background-color: var(--text-color);
+}
+.hero-btn {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 200;
+  height: 50;
+  background-color: var(--accent-color);
+  color: var(--first-title-color);
+  border: 0;
+  font-weight: 700;
+  display: flex;
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--color-hero-btn);
+}
+/* Секція переваги */
+.benefits {
+}
+.title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+.benefits-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+.benefits-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.examples {
+}
+/* Секція наша команда */
+.team {
+}
+.team-title {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+.team-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* Портфоліо */
+.portfolio {
+}
+.title {
+}
+.portfolio-btn {
+  background-color: var(--color-btn-menu);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: 0;
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--color-btn-menu);
+  background-color: var(--accent-color);
+}
+.portfolio-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+}
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
