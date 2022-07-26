@@ -24,6 +24,10 @@ ul{
   text-decoration: none;
   list-style: none;
 }
+p{
+  margin: 0;
+  padding: 0;
+}
 .list,
 .logo,
 .link {
@@ -36,7 +40,7 @@ ul{
   margin: 0 auto;
   padding: 0 15px 0 15px;
   width: 1200px;
-  outline: solid red;
+  /* outline: solid red; */
 }
 
 /* header */
@@ -79,17 +83,24 @@ ul{
 .content-header{
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .nav-list {
   display: flex;
   gap: 50px;
 }
+.nav-list{
+  padding: 32px 0;
+}
+.nav-list>li>a{
+  padding: 32px 0;
+}
 .contacts.list {
   margin-left: auto;
   display: flex;
   gap: 50px;
+}
+.contacts.list>li>a{
+  padding: 32px 0;
 }
 /* Секція герой */
 .hero {
@@ -139,9 +150,14 @@ ul{
 }
 .benefits-list{
   display: flex;
-  /* align-items: center; */
+  justify-content: center;
   gap: 30px;
   padding: 94px 0 94px 0;
+}
+.benefits-item{
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 270px;
 }
 .title {
   font-size: 36px;
@@ -275,8 +291,9 @@ letter-spacing: 0.03em;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
-  outline: solid orange;
+  padding-top: 94px;
+  margin-bottom: 50px;
+  /* outline: solid orange; */
   
 }
 .portfolio-btn {
@@ -290,8 +307,8 @@ letter-spacing: 0.03em;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  /* align-items: center;
-  text-align: center; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -303,6 +320,7 @@ letter-spacing: 0.03em;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--second-title-color);
+  margin: 20px 24px 4px 24px;
 }
 .portfolio-text {
   font-weight: 400;
@@ -310,9 +328,14 @@ letter-spacing: 0.03em;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin: 0 24px 20px 24px;
 }
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding-bottom: 94px;
+}
+.discription{
+  border: 1px solid #EEEEEE;
 }
