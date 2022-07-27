@@ -10,21 +10,26 @@
   --color-btn-menu: #f5f4fa;
   --color-hero-btn: #188ce8;
 }
-html{
+html {
   box-sizing: border-box;
 }
-img{
+img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 body {
   font-family: roboto, sans-serif;
   color: var(--second-title-color);
 }
-ul{
+ul {
   text-decoration: none;
   list-style: none;
 }
-p{
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -36,15 +41,21 @@ p{
   margin: 0;
   padding: 0;
 }
-.content {
+.container {
   margin: 0 auto;
   padding: 0 15px 0 15px;
   width: 1200px;
   /* outline: solid red; */
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* outline: solid red; */
+}
 
 /* header */
 .header {
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   font-family: "Raleway";
@@ -53,7 +64,7 @@ p{
   letter-spacing: 0.03em;
   color: var(--second-logo-color);
 }
-.logo-header{
+.logo-header {
   margin-right: 93px;
 }
 .logo-decoration {
@@ -80,7 +91,7 @@ p{
 .link:focus {
   color: var(--accent-color);
 }
-.content-header{
+.content-header {
   display: flex;
   align-items: center;
 }
@@ -88,10 +99,10 @@ p{
   display: flex;
   gap: 50px;
 }
-.nav-list{
+.nav-list {
   padding: 32px 0;
 }
-.nav-list>li>a{
+.nav-list > li > a {
   padding: 32px 0;
 }
 .contacts.list {
@@ -99,29 +110,28 @@ p{
   display: flex;
   gap: 50px;
 }
-.contacts.list>li>a{
+.contacts.list > li > a {
   padding: 32px 0;
 }
 /* Секція герой */
 .hero {
+  padding: 200px 0;
   text-align: center;
-  background-color: #2F303A;
-  /* margin: 0 auto; */
+  background-color: #2f303a;
 }
 .hero-title {
-  display: inline-block;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-title-color);
-  margin: 0 0 30px 0;
-  padding-top: 200px;
   max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 .hero-btn {
-  display: inline-block
   font-family: "Roboto";
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -136,25 +146,19 @@ p{
   padding: 10px 32px;
   min-width: 200px;
 }
-.hero-btn-p{
-  padding-bottom: 200px;
-}
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--color-hero-btn);
 }
 /* Секція переваги */
 .benefits {
-  margin: 0;
-  padding: 0;
 }
-.benefits-list{
+.benefits-list {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 94px 0 94px 0;
 }
-.benefits-item{
+.benefits-item {
   box-sizing: border-box;
   text-align: left;
   max-width: 270px;
@@ -168,17 +172,17 @@ p{
   margin: 0;
   padding: 0;
 }
-.visually-hidden { 
-position: absolute; 
-width: 1px; 
-height: 1px; 
-margin: -1px; 
-border: 0; 
-padding: 0; 
-white-space: nowrap; 
-clip-path: inset(100%); 
-clip: rect(0 0 0 0); 
-overflow: hidden; 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .benefits-title {
   font-size: 14px;
@@ -197,45 +201,47 @@ overflow: hidden;
   margin: 0;
   padding: 0;
 }
-.benefits-list>li{
+.benefits-list > li {
   max-width: 270px;
 }
 /* Чим ми займоємося */
 .examples {
+  padding-top: 0;
 }
-.examples-title{
-  /* margin-top: 94px; */
+.examples-title {
   margin-bottom: 50px;
 }
-.examples-list{
+.examples-list {
   display: flex;
   gap: 30px;
 }
 /* Секція наша команда */
 .team {
+  background-color: #f5f4fa;
 }
-.team-list{
+.team-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
- 
 }
-.team-list li{
+.team-list li {
   max-width: 270px;
-  padding: 0 0 30px 0;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-titleh{
-padding-top: 94px;
-margin-bottom: 50px;
+.team-titleh {
+  margin-bottom: 50px;
+}
+.team-signature {
+  padding: 30px 0;
 }
 .team-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  margin: 30px 0 10px 0;
+  margin-bottom: 10px;
   padding: 0;
   text-align: center;
 }
@@ -250,9 +256,11 @@ margin-bottom: 50px;
 }
 
 /* FOoTTEr */
-.logo-footer{
+.footer {
+  padding: 60px 0;
+}
+.logo-footer {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .logo-footer-tw {
@@ -261,40 +269,36 @@ margin-bottom: 50px;
 .footer {
   background-color: #2f303a;
 }
-.contacts-list-footer{
-padding-bottom: 30px;
+.contacts-list-footer {
 }
-.contacts-list-footer>li:not(:last-child){
+.contacts-list-footer > li:not(:last-child) {
   display: block;
   margin-bottom: 9px;
-
 }
 .contacts-adress {
-font-weight: 400;
-font-size: 14px;
-line-height: calc(24/14);
-letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
   color: var(--first-title-color);
 }
 .contacts-footer {
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: var(--contacts-footer-color);
 }
 /* Портфоліо */
 .portfolio {
 }
-.list-btn{
+.list-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
   margin-bottom: 50px;
   /* outline: solid orange; */
-  
 }
 .portfolio-btn {
   background-color: var(--color-btn-menu);
@@ -307,20 +311,20 @@ letter-spacing: 0.03em;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 4px;
+  border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--color-btn-menu);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .portfolio-title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--second-title-color);
-  margin: 20px 24px 4px 24px;
+  margin: 0 0 4px 0;
 }
 .portfolio-text {
   font-weight: 400;
@@ -328,14 +332,15 @@ border-radius: 4px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin: 0 24px 20px 24px;
 }
-.portfolio-list{
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
-.discription{
-  border: 1px solid #EEEEEE;
+.discription {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 0 24px 20px 24px;
 }
